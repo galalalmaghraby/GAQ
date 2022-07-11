@@ -1,0 +1,38 @@
+{
+  "name": "gaq",
+  "version": "1.0.0",
+  "description": "GAQ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galalalmaghraby/GAQ.git"
+  },
+  "keywords": [
+    "GAQ"
+  ],
+  "author": "Almaghrabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galalalmaghraby/GAQ/issues"
+  },
+  "homepage": "https://github.com/galalalmaghraby/GAQ#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "connect-flash": "^0.1.1",
+    "connect-livereload": "^0.6.1",
+    "connect-mongodb-session": "^3.1.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "livereload": "^0.9.3",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19",
+    "session": "^0.1.0"
+  }
+}
