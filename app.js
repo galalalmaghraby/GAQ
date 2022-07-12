@@ -40,7 +40,7 @@ const sessionStore = require("connect-mongodb-session")(session)
 const flash = require('connect-flash')
 
 const store = new sessionStore({
-uri:"mongodb+srv://galal:<password>@cluster0.brkfj.mongodb.net/GAQ?retryWrites=true&w=majority",
+uri:'mongodb+srv://galal:galal@cluster0.cscaj.mongodb.net/GAQ?retryWrites=true&w=majority',
 collection:"sessions",
 })
 app.use(session({
@@ -52,11 +52,13 @@ app.use(session({
 
 app.use(flash())
 /* =============== start main page ============== */
-
+const homerouter = require('./routes/homeRoute')
+const authRouter = require('./routes/auth.router')
+app.use(homerouter)
+app.use('/auth',authRouter)
 
 
 /* =============== end main page ============== */
-
 
 
 
